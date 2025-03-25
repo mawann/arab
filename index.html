@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <title>Arabic Autotext for WhatsApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kumpulan teks arab untuk WhatsApp.">
+  <meta name="author" content="Mawan A. Nugroho">
+  <meta name="keywords" content="arabic, arab, autotext, whatsapp, teks, text, message, pesan, pesan singkat, short message, arabic autotext, arabic autotext for whatsapp, arabic autotext whatsapp, arabic autotext message, arabic autotext short message, arabic autotext pesan, arabic autotext pesan singkat, arabic autotext pesan singkat whatsapp">
+  <link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAABhEQ0A////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREREREREQAAAAAAAAARAAAAAAAAABEAEQARABEAEQARABEAEQARAAAAEQARABEAAAARABEAERERABEAEQAREREAEQARABEAAAARABEAEQAAABEAEQAREREREREREREREREREREREQAAAAAAAAARAAAAAAAAABEREREREREREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">
+  <style>
+  body {
+    color:white;
+    background-color:black;
+    font-family:Georgia,Times New Roman,Serif;
+  }
+  a {
+    color:white;
+  }
+  #kotak {
+    display:block;
+    width:100%;
+    max-width:600px;
+    margin:auto;
+  }
+  .rata {
+    text-align:justify;
+  }
+  .tengah {
+    text-align:center;
+  }
+  .kanan {
+    text-align:right;
+    font-size:small;
+    font-style:italic;
+  }
+  </style>
+  <script>
+  function salin(kode) {
+    var sel = window.getSelection ? window.getSelection() : document.selection;
+    if (sel) {
+      if (sel.removeAllRanges) {
+        sel.removeAllRanges();
+      }
+      else if (sel.empty) {
+        sel.empty();
+      }
+    };
+  
+    if (document.selection) { 
+      var range = document.body.createTextRange();
+      range.moveToElementText(document.getElementById(kode));
+      range.select().createTextRange();
+      document.execCommand("copy"); 
+    } 
+    else if (window.getSelection) {
+      var range = document.createRange();
+      range.selectNode(document.getElementById(kode));
+      window.getSelection().addRange(range);
+      document.execCommand("copy");
+    }
+  }
+  </script>
+</head>  
+<body>
+  <div id="kotak">
+    <h1 class="tengah">Arabic Autotext</h1>
+    <p class="rata">Anda sedang mengakses salah satu VPS milik <a href="./tentang/">Mawan Agus Nugroho</a>.</p>
+    <p class="rata">Sambil halaman web ini selesai diperindah, saya punya sedikit perkakas untuk memudahkan kita ketika harus mengetik kalimat-kalimat thoyyibah yang sering digunakan.<br>Cara memakai: Cukup klik tulisan Latin di sebelah kanan tulisan Arab yang ingin disalin, maka teks otomatis disalin (copy) ke Clipboard. Lalu anda bisa menempelkan (paste) teks tersebut ke sembarang aplikasi (misalnya Facebook, Telegram, dan WhatsApp).</p>
+    <p><span id="aamiin">&#x622;&#x645;&#x650;&#x640;&#x640;&#x640;&#x640;&#x640;&#x640;&#x640;&#x640;&#x640;&#x640;&#x64A;&#x652;&#x646;&#x64E; &#x64A;&#x64E;&#x627; &#x631;&#x64E;&#x628;&#x651;&#x64E; &#x627;&#x644;&#x652;&#x639;&#x64E;&#x627;&#x644;&#x64E;&#x645;&#x650;&#x640;&#x640;&#x640;&#x640;&#x640;&#x640;&#x640;&#x640;&#x640;&#x640;&#x64A;&#x652;&#x646;&#x64E;</span> <button onclick="salin('aamiin')">Aamiin</button></p>
+    <p><span id="alhamdulillah">&#x627;&#x644;&#x652;&#x62D;&#x64E;&#x645;&#x652;&#x62F;&#x64F; &#x644;&#x644;&#x651;&#x647;&#x650; &#x631;&#x64E;&#x628;&#x650;&#x651; &#x627;&#x644;&#x652;&#x639;&#x64E;&#x627;&#x644;&#x64E;&#x645;&#x650;&#x64A;&#x646;</span> <button onclick="salin('alhamdulillah')">Alhamdulillah...</button></p>
+    <p><span id="assalam">&#1575;&#1604;&#1587;&#1617;&#1614;&#1604;&#1575;&#1614;&#1605;&#1615; &#1593;&#1614;&#1604;&#1614;&#1610;&#1618;&#1603;&#1615;&#1605;&#1618; &#1608;&#1614;&#1585;&#1614;&#1581;&#1618;&#1605;&#1614;&#1577;&#1615; &#1575;&#1604;&#1604;&#1607;&#1616; &#1608;&#1614;&#1576;&#1614;&#1585;&#1614;&#1603;&#1614;&#1575;&#1578;&#1615;&#1607;</span> <button onclick="salin('assalam')">Assalamu'alaikum...</button></p>
+    <p><span id="allahu">&#x627;&#x64E;&#x644;&#x644;&#x651;&#x647;&#x64F; &#x627;&#x64E;&#x643;&#x652;&#x628;&#x64E;&#x631;&#x64F;</span> <button onclick="salin('allahu')">Allahu Akbar</button></p>
+    <p><span id="astaghfirullah">&#x627;&#x633;&#x652;&#x62A;&#x64E;&#x63A;&#x652;&#x641;&#x650;&#x631;&#x64F; &#x627;&#x644;&#x644;&#x651;&#x647;&#x64E; &#x627;&#x644;&#x652;&#x639;&#x64E;&#x638;&#x650;&#x64A;&#x652;&#x645;</span> <button onclick="salin('astaghfirullah')">Astaghfirullah...</button></p>
+    <p><span id="barakallah">&#x628;&#x64E;&#x627;&#x631;&#x64E;&#x643;&#x64E; &#x627;&#x644;&#x644;&#x651;&#x64E;&#x647;&#x64F; &#x641;&#x650;&#x64A;&#x652;&#x643;</span> <button onclick="salin('barakallah')">Barakallah...</button></p>
+    <p><span id="bismillah">&#1576;&#1616;&#1587;&#1618;&#1605;&#1616; &#1575;&#1604;&#1604;&#1617;&#1607;&#1616; &#1575;&#1604;&#1585;&#1617;&#1614;&#1581;&#1618;&#1605;&#1614;&#1606;&#1616; &#1575;&#1604;&#1585;&#1617;&#1614;&#1581;&#1616;&#1610;&#1618;&#1605;&#1616;</span> <button onclick="salin('bismillah')">Bismillah...</button></p>
+    <p><span id="inna">&#1575;&#1616;&#1606;&#1617;&#1575; &#1604;&#1616;&#1604;&#1617;&#1607;&#1616; &#1608;&#1614;&#1575;&#1616;&#1606;&#1617;&#1575; &#1575;&#1616;&#1604;&#1614;&#1610;&#1618;&#1607;&#1616; &#1585;&#1614;&#1575;&#1580;&#1616;&#1593;&#1615;&#1608;&#1618;&#1606;&#1614;</span> <button onclick="salin('inna')">Innalillahi...</button></p>
+    <p><span id="insya">&#x627;&#x650; &#x646;&#x652; &#x634;&#x64E;&#x622; &#x621;&#x64E; &#x627;&#x644;&#x644;&#x651;&#x647;&#x64F;</span> <button onclick="salin('insya')">Insya Allah</button></p>
+    <p><span id="laahaula">&#x644;&#x627;&#x64E; &#x62D;&#x64E;&#x648;&#x652;&#x644;&#x64E; &#x648;&#x64E;&#x644;&#x627;&#x64E; &#x642;&#x64F;&#x648;&#x64E;&#x651;&#x629;&#x64E; &#x627;&#x650;&#x644;&#x627;&#x64E;&#x651; &#x628;&#x650;&#x627;&#x644;&#x644;&#x651;&#x64E;&#x647;&#x650;</span> <button onclick="salin('laahaula')">Laa Haula...</button></p>
+    <p><span id="masya">&#x645;&#x64E;&#x627; &#x634;&#x64E;&#x622;&#x621;&#x64E;&#x627;&#x644;&#x644;&#x651;&#x647;&#x64F;</span> <button onclick="salin('masya')">Masya Allah</button></p>
+    <p><span id="subhanallah">&#x633;&#x64F;&#x628;&#x652;&#x62D;&#x64E;&#x627;&#x646;&#x64E; &#x627;&#x644;&#x644;&#x651;&#x647;&#x650;</span> <button onclick="salin('subhanallah')">Subhanallah</button></p>
+    <p><span id="waalaikum">&#1608;&#1614;&#1593;&#1614;&#1604;&#1614;&#1610;&#1618;&#1603;&#1615;&#1605;&#1615; &#1575;&#1604;&#1587;&#1617;&#1614;&#1604;&#1575;&#1614;&#1605;&#1615; &#1608;&#1614;&#1585;&#1614;&#1581;&#1618;&#1605;&#1614;&#1577;&#1615; &#1575;&#1604;&#1604;&#1617;&#1614;&#1607;&#1616; &#1608;&#1614;&#1576;&#1614;&#1585;&#1614;&#1603;&#1614;&#1600;&#1575;&#1578;&#1615;&#1607;&#1615;</span> <button onclick="salin('waalaikum')">Wa'alaikum...</button></p>
+    <p><span id="wallahu">&#x648;&#x64E;&#x627;&#x644;&#x644;&#x651;&#x647;&#x64F; &#x623;&#x639;&#x644;&#x64E;&#x645; &#x628;&#x650;&#x627;&#x644;&#x635;&#x64E;&#x651;&#x648;&#x64E;&#x627;&#x628;</span> <button onclick="salin('wallahu')">Wallahu alam...</button></p>
+    
+    <p class="rata">Bila halaman web ini banyak yang menggunakan, &#x627;&#x650; &#x646;&#x652; &#x634;&#x64E;&#x622; &#x621;&#x64E; &#x627;&#x644;&#x644;&#x651;&#x647;&#x64F; saya akan menambahkan kalimat-kalimat yang lain.</p>
+    <hr>
+    <p class="kanan">&copy; Copyright by <a href="https://www.mawan.net">Mawan A. Nugroho</a>.</p>
+  </div>      
+</body>
+</html>
